@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PSP - Personal Software Process</title>
+    <title>PSP</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/psp.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <div>PSP y TSP</div>
-        <nav>
+    <header class="header">
+      <div class="container caja-navegacion">
+        <div class="logo">PSP y TSP</div>
+        <nav class="navegacion">
           <a href="../index.html">Inicio</a>
           <a href="psp.html">PSP</a>
           <a href="tsp.html">TSP</a>
@@ -17,8 +19,8 @@
       </div>
     </header>
 
-    <section>
-      <div>
+    <section class="encabezado-pagina">
+      <div class="container">
         <h1>Personal Software Process (PSP)</h1>
         <p>
           Un proceso pensado para que cada desarrollador planifique, mida y
@@ -27,8 +29,8 @@
       </div>
     </section>
 
-    <section>
-      <div>
+    <section class="contenido container">
+      <div class="texto-principal">
         <h2>¿Qué es PSP?</h2>
         <p>
           El PSP fue creado por Watts Humphrey en el Software Engineering
@@ -50,7 +52,7 @@
         </p>
       </div>
 
-      <aside>
+      <aside class="lateral">
         <h3>Datos rápidos</h3>
         <ul>
           <li>Autor: Watts Humphrey</li>
@@ -61,18 +63,18 @@
       </aside>
     </section>
 
-    <section>
+    <section class="seccion-grid container">
       <h2>Niveles del PSP</h2>
-      <div>
-        <div>
+      <div class="grid-tarjetas">
+        <div class="tarjeta">
           <h3>PSP0</h3>
           <p>Proceso base: se registran tiempos y defectos del trabajo.</p>
         </div>
-        <div>
+        <div class="tarjeta">
           <h3>PSP1</h3>
           <p>Se agregan estimación de tamaño y planificación de tareas.</p>
         </div>
-        <div>
+        <div class="tarjeta">
           <h3>PSP2</h3>
           <p>
             Se incluyen revisiones de diseño y de código para prevenir defectos.
@@ -81,12 +83,12 @@
       </div>
     </section>
 
-    <div>
-      <a href="tsp.html">Conocer TSP</a>
+    <div class="volver container">
+      <a href="tsp.html" class="boton azul">Conocer TSP</a>
     </div>
 
-    <footer>
-      <div>
+    <footer class="pie">
+      <div class="container caja-pie">
         <p>© 2026 - Proyecto académico PSP y TSP</p>
       </div>
     </footer>
