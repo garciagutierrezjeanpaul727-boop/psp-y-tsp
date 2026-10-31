@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PSP</title>
+    <title>PSP - Personal Software Process</title>
     <link rel="stylesheet" href="../styles/index.css" />
     <link rel="stylesheet" href="../styles/psp.css" />
   </head>
@@ -33,51 +33,163 @@
       <div class="texto-principal">
         <h2>¿Qué es PSP?</h2>
         <p>
-          El PSP fue creado por Watts Humphrey en el Software Engineering
-          Institute (SEI). Es una metodología enfocada en el trabajo individual:
-          cada persona registra cuánto tiempo gasta, cuánto código produce y
-          cuántos defectos comete, para poder mejorar.
+          El PSP (Personal Software Process) es un marco de trabajo para que
+          cada desarrollador defina sus propios procesos, planee y dé
+          seguimiento a su trabajo y administre la calidad de los productos que
+          construye.
         </p>
 
-        <h2>Objetivos</h2>
+        <h2>Objetivo</h2>
         <p>
-          Mejorar la estimación y la planificación, reducir los defectos y
-          aumentar la calidad del producto desde el trabajo personal.
+          Obtener y reportar datos precisos del trabajo individual para mejorar
+          el proceso personal y, con ello, el desempeño de todo el equipo.
         </p>
 
-        <h2>Métricas principales</h2>
+        <h2>Dato clave</h2>
         <p>
-          PSP se basa en tres medidas: tiempo de desarrollo, tamaño del producto
-          (por ejemplo, líneas de código) y defectos encontrados.
+          Los costos de personal son cerca del 70% del costo del desarrollo de
+          software, por eso los hábitos de cada ingeniero marcan el resultado
+          final del proyecto.
         </p>
       </div>
 
       <aside class="lateral">
         <h3>Datos rápidos</h3>
         <ul>
-          <li>Autor: Watts Humphrey</li>
-          <li>Institución: SEI</li>
+          <li>Creador: Watts S. Humphrey</li>
+          <li>Año: 1995</li>
+          <li>Institución: SEI (Carnegie Mellon)</li>
           <li>Enfoque: individual</li>
-          <li>Base: métricas y registros</li>
+          <li>Niveles: PSP0 a PSP3</li>
         </ul>
       </aside>
     </section>
 
     <section class="seccion-grid container">
-      <h2>Niveles del PSP</h2>
+      <h2>Creador del PSP</h2>
+      <p>
+        El PSP (Personal Software Process) y el TSP (Team Software Process)
+        fueron creados por Watts S. Humphrey, un pionero en la ingeniería de
+        software que trabajó en el Software Engineering Institute (SEI) de
+        Carnegie Mellon University en los años 1990. Es conocido como el “padre
+        de la calidad del software”, porque impulsó la idea de que el desarrollo
+        debía ser tan disciplinado y medible como cualquier proceso industrial.
+      </p>
+      <div class="grid-tarjetas dos">
+        <div class="tarjeta">
+          <h3>PSP (1995)</h3>
+          <p>
+            Humphrey lo diseñó para que cada programador pudiera medir, analizar
+            y mejorar su propio proceso de desarrollo.
+          </p>
+        </div>
+        <div class="tarjeta">
+          <h3>TSP (1998)</h3>
+          <p>
+            Es la evolución del PSP, pensado para equipos completos, con roles
+            definidos y métricas compartidas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-grid container">
+      <h2>Los niveles del PSP</h2>
+      <p>
+        El PSP se divide en cuatro niveles. Cada uno agrega nuevas prácticas
+        sobre el anterior, de la disciplina básica hasta un proceso personal
+        cíclico.
+      </p>
+      <div class="grid-tarjetas cuatro">
+        <div class="tarjeta">
+          <h3>PSP0 PSP0.1</h3>
+          <p class="objetivo">Introducir la disciplina básica.</p>
+          <ul>
+            <li>Estimar tiempo y defectos del proyecto.</li>
+            <li>Definir estándares de código.</li>
+            <li>Medir el tamaño del software (líneas de código, módulos).</li>
+          </ul>
+        </div>
+        <div class="tarjeta">
+          <h3>PSP1 PSP1.1</h3>
+          <p class="objetivo">Mejorar la planeación.</p>
+          <ul>
+            <li>Estimar el tamaño del software con más precisión.</li>
+            <li>Reportar las pruebas realizadas.</li>
+            <li>Elaborar un calendario de planeación de tareas.</li>
+          </ul>
+        </div>
+        <div class="tarjeta">
+          <h3>PSP2 PSP2.1</h3>
+          <p class="objetivo">Introducir calidad en el proceso.</p>
+          <ul>
+            <li>Manejo de la calidad del software.</li>
+            <li>Revisión de diseño y código (inspecciones personales).</li>
+            <li>Uso de plantillas de diseño para estandarizar.</li>
+          </ul>
+        </div>
+        <div class="tarjeta">
+          <h3>PSP3</h3>
+          <p class="objetivo">Convertir el proceso en un ciclo repetible.</p>
+          <ul>
+            <li>Definir un proceso personal cíclico.</li>
+            <li>Aplicar iteraciones y retroalimentación continua.</li>
+            <li>Refinar estimaciones y calidad en cada ciclo.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-grid container">
+      <h2>Ventajas y desventajas</h2>
+      <div class="dos-columnas">
+        <div class="caja-lista ventajas">
+          <h3>Ventajas</h3>
+          <ul>
+            <li>Mejora la productividad de las personas involucradas.</li>
+            <li>Reduce los errores de codificación.</li>
+            <li>Da mejor control de los trabajos individuales.</li>
+            <li>Mejora la calidad.</li>
+            <li>
+              Facilita identificar fortalezas y debilidades para mejorarlas.
+            </li>
+          </ul>
+        </div>
+        <div class="caja-lista desventajas">
+          <h3>Desventajas</h3>
+          <ul>
+            <li>Puede generar tensión emocional por sentirse controlado.</li>
+            <li>
+              Implica tiempo para llevar el registro de los tiempos y los
+              defectos.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-grid container">
+      <h2>Certificación PSP</h2>
+      <p>
+        La certificación está alineada con modelos como CMMI o ISO. Ayuda a
+        mejorar la estimación y la planeación, asumir compromisos que se puedan
+        cumplir, administrar la calidad y reducir defectos.
+      </p>
       <div class="grid-tarjetas">
         <div class="tarjeta">
-          <h3>PSP0</h3>
-          <p>Proceso base: se registran tiempos y defectos del trabajo.</p>
+          <h3>Meta</h3>
+          <p>Productos de calidad con cero defectos y en la fecha propuesta.</p>
         </div>
         <div class="tarjeta">
-          <h3>PSP1</h3>
-          <p>Se agregan estimación de tamaño y planificación de tareas.</p>
+          <h3>Costo y duración</h3>
+          <p class="dato-grande">$23,916.00</p>
+          <p>64 horas distribuidas en 10 días.</p>
         </div>
         <div class="tarjeta">
-          <h3>PSP2</h3>
+          <h3>Empresas certificadas</h3>
           <p>
-            Se incluyen revisiones de diseño y de código para prevenir defectos.
+            Tecnología de Gestión y Comunicación, SAITOSOFT, Universidad
+            Tecnológica de León (UTL), i-place y T-Systems México.
           </p>
         </div>
       </div>

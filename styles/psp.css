@@ -1,3 +1,5 @@
+/* ========== BASE: CELULAR ========== */
+
 .container {
   width: 100%;
   max-width: 1100px;
@@ -21,6 +23,7 @@
   font-size: 15px;
 }
 
+/* Flexbox: en celular una columna */
 .contenido {
   display: flex;
   flex-direction: column;
@@ -65,6 +68,12 @@
   padding: 0 20px 40px;
 }
 
+.seccion-grid > p {
+  line-height: 1.6;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
 .grid-tarjetas {
   display: grid;
   grid-template-columns: 1fr;
@@ -88,6 +97,67 @@
   font-size: 14px;
   line-height: 1.6;
   color: #7d8a92;
+}
+
+.tarjeta .objetivo {
+  color: #4c5d68;
+  font-weight: bold;
+}
+
+.tarjeta .dato-grande {
+  font-size: 26px;
+  font-weight: bold;
+  color: #4c5d68;
+  margin-bottom: 5px;
+}
+
+.tarjeta ul {
+  padding-left: 18px;
+  margin-top: 10px;
+}
+
+.tarjeta li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #7d8a92;
+  margin-bottom: 4px;
+}
+
+.dos-columnas {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.caja-lista {
+  flex: 1;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+
+.caja-lista.ventajas {
+  border-top: 4px solid #57a9e1;
+}
+
+.caja-lista.desventajas {
+  border-top: 4px solid #8fa3ad;
+}
+
+.caja-lista h3 {
+  color: #4c5d68;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.caja-lista ul {
+  padding-left: 20px;
+}
+
+.caja-lista li {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 10px;
 }
 
 .volver {
@@ -123,6 +193,7 @@
     max-width: 700px;
   }
 
+  /* Flexbox: dos columnas */
   .contenido {
     flex-direction: row;
     gap: 40px;
@@ -150,6 +221,19 @@
 
   .grid-tarjetas {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-tarjetas.dos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-tarjetas.cuatro {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .dos-columnas {
+    flex-direction: row;
+    gap: 20px;
   }
 
   .volver {

@@ -20,9 +20,11 @@ a {
 }
 
 .container {
-  width: 1100px;
+  width: 100%;
   max-width: 1100px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header {
@@ -33,7 +35,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -174,7 +177,8 @@ a {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  padding: 60px 0 30px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .servicio {
@@ -280,7 +284,8 @@ a {
 }
 
 .proyectos {
-  padding: 20px 0 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .proyectos h2,
@@ -332,10 +337,45 @@ a {
   object-fit: cover;
 }
 
+/* Vista previa del sitio PSP y TSP (Netlify) */
+.vista-previa {
+  display: block;
+  color: inherit;
+}
+
+.marco-previa {
+  height: 260px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* El iframe se dibuja al doble de tamaño y se reduce a la mitad,
+   así cabe en la tarjeta sin importar su ancho */
+.marco-previa iframe {
+  width: 200%;
+  height: 200%;
+  border: 0;
+  transform: scale(0.5);
+  transform-origin: top left;
+  pointer-events: none;
+}
+
+.titulo-previa {
+  padding: 15px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #4c5d68;
+}
+
+.vista-previa:hover .titulo-previa {
+  text-decoration: underline;
+}
+
 .novedades {
   display: flex;
   gap: 50px;
-  padding: 20px 0 60px;
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
 
 .columna {
@@ -414,7 +454,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .pie p {
@@ -431,6 +472,12 @@ a {
   width: 28px;
   height: 28px;
   border-radius: 50%;
+}
+
+@media (min-width: 900px) {
+  .marco-previa {
+    height: 420px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -483,7 +530,10 @@ a {
   }
 
   .marcas {
-    font-size: 45px;
-    letter-spacing: -4px;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px 20px;
+    font-size: 32px;
+    letter-spacing: -2px;
   }
 }
